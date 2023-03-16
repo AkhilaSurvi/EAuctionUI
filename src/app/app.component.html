@@ -1,0 +1,94 @@
+<div class="mrglft10">
+
+  <h1>
+  
+    SHOW BID DETAILS FOR A SELLER
+  
+  </h1>
+  
+  <br/>
+  
+   
+  
+    <div class="row">
+  
+        <label><i>SELLER ID*</i></label> &nbsp;
+  
+        <input id="prdId" name="prdId" type="text" class="mrglft10" [required]/>&nbsp;
+  
+        <button id="searchBids" (click)="searchBids()">Search</button>
+  
+    </div>
+  
+   <br/>
+  
+   <table>
+  
+    <tr>
+  
+  <th>Buyer Id</th>
+  
+  <th>First Name</th>
+  
+  <th>Last Name</th>
+  
+  <th>Address</th>
+  
+  <th>City</th>
+  
+  <th>State</th>
+  
+  <th>Pin</th>
+  
+  <th>Phone</th>
+  
+  <th>Email</th>
+  
+  <th>ProductId</th>
+  
+  <th>BidAmount</th>
+  
+  </tr>
+  
+   
+  
+  <ng-container *ngFor="let bid of bids">
+  
+  <tr>
+  
+  <td>{{bid.buyerId}}</td>
+  
+  <td>{{bid.firstName}}</td>
+  
+  <td>{{bid.lastName}}</td>
+  
+  <td>{{bid.address}}</td>
+  
+  <td>{{bid.city}}</td>
+  
+  <td>{{bid.state}}</td>
+  
+  <td>{{bid.pin}}</td>
+  
+  <td>{{bid.phone}}</td>
+  
+  <td>{{bid.email}}</td>
+  
+  <td>{{bid.productId}}</td>
+  
+  <td>{{bid.bidAmount}}</td>
+  
+  </tr>
+  
+  </ng-container>
+  
+  </table>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+   
